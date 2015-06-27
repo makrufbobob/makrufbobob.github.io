@@ -1,0 +1,24 @@
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev&nbsp</a>
+  {% else %}
+    <span>&laquo; Prev&nbsp&nbsp</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      {{ page }}
+    {% elsif page == 1 %}
+      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">&nbsp{{ page }}&nbsp</a>
+    {% else %} 
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">&nbsp{{ page }}&nbsp</a>
+    {% endif %}
+  {% endfor %}
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&nbspNext &raquo;</a>
+  {% else %}
+    <span>&nbsp&nbspNext &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}

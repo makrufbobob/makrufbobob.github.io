@@ -1,0 +1,18 @@
+# Site settings
+title: Ma'ruf
+email: makrufdark@gmail.com
+description: > #Bloging untuk belajar, bloging untuk have fun
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: makruf_23
+github_username:  makrufbobob
+
+#Pagination
+paginate: 5
+
+# Build settings
+markdown: redcarpet
+highlighter: pygments
+permalink: pretty
+
+
