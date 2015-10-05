@@ -1,2 +1,1 @@
-nama : Ma'ruf
-site : makrufbobob.github.io
+makrufbobob.github.io
