@@ -1,7 +1,7 @@
 # Site settings
 title: bobob
 email: makrufdark@gmail.com
-description: > #Bloging untuk belajar, bloging untuk have fun
+description: > #Bloging untuk belajar, just have fun
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: makruf_23

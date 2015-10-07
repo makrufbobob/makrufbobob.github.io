@@ -8,10 +8,7 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-center{
-    floar: center;
-    text-align: center;
-}
+
 
 /**
  * Basic styling
@@ -185,4 +182,10 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/* Utility classes */
+.center {
+    text-align: center;
+    float: center;
 }

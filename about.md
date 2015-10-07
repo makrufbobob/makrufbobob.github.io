@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Hi...
+*Assalamu'alaikum ...*
+
+Perkenalkan nama saya Ma'ruf (sudah nama lengkap), Saat ini saya masih belajar di STMIK, salah satu perguruan tinggi swasta yang ada di Banjarmasin.
