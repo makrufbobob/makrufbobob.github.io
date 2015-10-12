@@ -5,8 +5,17 @@
 	fill: currentColor;
 }
 
-
 .icon-home {
 	font-size: 32px; // works because "width" & "height" were set using em units
-	color: red; // works because "fill" was set to "currentColor"
+	color: black; // works because "fill" was set to "currentColor"
+}
+
+.icon-footer{
+	font-size: 20px;
+	color: black;
+}
+
+.icon-twitter {
+	font-size: 20px;
+	color: #0070ff;
 }

@@ -15,7 +15,7 @@ permalink: /archive/
 			{% if forloop.first %}
 			  <div  class="post-list">
 			  <h4 class="page-heading">{{this_year}}</h4>
-			  <h4>{{this_month}}</h4>
+			  
 			  <ul>
 			{% endif %}
 			
@@ -30,14 +30,8 @@ permalink: /archive/
 			</div>
 			<div  class="post-list">
 				<h4 class="page-heading">{{next_year}}</h4>
-				<h4>{{next_month}}</h4>
+				
 				<ul>
-			  {% else %}    
-				{% if this_month != next_month %}
-				  </ul>
-				  <h4>{{next_month}}</h4>
-				  <ul>
-				{% endif %}
 			  {% endif %}
 			{% endif %}
 			

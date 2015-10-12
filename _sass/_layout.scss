@@ -3,15 +3,15 @@
  */
 .site-header {
     border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
-
+    border-bottom: 5px solid $grey-color-light;
+    min-height: 75px;
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
+    margin-top: 10px;
+    font-size: 35px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -19,7 +19,7 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: black;
     }
     @media (min-width: 750px) {
     float: center;
@@ -31,6 +31,7 @@
 }
 
 .site-nav {
+    margin-top: 20px;
     float: right;
     line-height: 56px;
 
@@ -49,7 +50,7 @@
     }
 
     @include media-query($on-palm) {
-        position: absolute;
+        margin-top: 10px;
         top: 9px;
         right: 30px;
         background-color: $background-color;
@@ -103,7 +104,8 @@
     text: center;
     align: center;
     text-align: center;
-
+    color: #ffffff;
+    background-color: #ff3503;
 
 }
 

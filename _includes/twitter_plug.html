@@ -1,0 +1,14 @@
+<div class ="center">
+If you liked this post, you can
+<a href="https://twitter.com/intent/tweet?url={{ site.baseurl }}{{ page.url }}&text={{ page.title }}&via=bobob" 
+   target="_blank">
+  share it with your followers</a> 
+<br>
+or follow me on
+{% if site.twitter_username %}
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+             <i class="icon-twitter"></i>Twitter
+            </a>
+          {% endif %}
+!
+</div>
