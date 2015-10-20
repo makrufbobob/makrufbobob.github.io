@@ -1,7 +1,7 @@
 # Site settings
 title: bobob
 email: makrufdark@gmail.com
-description: > #Bloging untuk belajar, just have fun
+description: > #Bloging Belajar 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: makruf_23
@@ -12,8 +12,8 @@ facebook_username: #
 paginate: 5
 
 # Build settings
-markdown: redcarpet
 highlighter: pygments
+markdown: redcarpet
 permalink: none
 
 
