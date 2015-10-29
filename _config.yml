@@ -1,12 +1,12 @@
 # Site settings
 title: bobob
 email: makrufdark@gmail.com
-description: > #Bloging Belajar 
+description: > # - Bloging - Belajar - Hobby
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: makruf_23
 github_username:  makrufbobob
-facebook_username: #
+facebook_username: MakrufDonquixote
 
 #Pagination
 paginate: 5
