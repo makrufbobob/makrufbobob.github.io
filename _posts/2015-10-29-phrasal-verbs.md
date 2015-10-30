@@ -1,6 +1,7 @@
 ---
 layout : post
 title : Phrasal Verbs
+permalink: phrasal-verbs.html
 ---
 
 Phrasal verb yang terdiri dari verb + adverb posisinya bisa Verb + Object (Noun or Pronoun) + Adverb atau Verb + Adverb + Object (Nouns Only). Perhatikan juga bahwa Phrasal verb ada yang tidak mempunyai object (intransitive)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sistem Terdistribusi BAB III"
-date:   2015-10-20 16:40:00
+permalink: sistem-terdistribusi-bab-3.html
 ---
 
 ###<center>BAB III PROSES</center>

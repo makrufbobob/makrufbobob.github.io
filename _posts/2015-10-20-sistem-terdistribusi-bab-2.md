@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sistem Terdistribusi BAB II"
-date:   2015-10-20 14:21:00
+permalink: sistem-terdistribusi-bab-2.html
 ---
 
 ###<center>BAB II KOMUNIKASI

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sistem Terdistribusi BAB I"
-date:   2015-10-05 11:35:33
+permalink: sistem-terdistribusi-bab-1.html
 ---
  
 ###<center>BAB I</center>
