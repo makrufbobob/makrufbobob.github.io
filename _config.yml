@@ -17,6 +17,7 @@ markdown: redcarpet
 redcarpet: 
   extensions:
     - tables
-  
+
+permalink: none
 
 
