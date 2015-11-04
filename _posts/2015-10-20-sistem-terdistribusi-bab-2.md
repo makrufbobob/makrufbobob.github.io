@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Sistem Terdistribusi BAB II"
+title: "Sistem Terdistribusi Bab 2"
 permalink: sistem-terdistribusi-bab-2.html
 ---
 
-###<center>BAB II KOMUNIKASI
-
-#### **2.1 Komunikasi Data**
-
-Komunikasi data adalah merupakan bagian dari telekomunikasi yang secara khusus
+<h5 class="u-pull-center"> BAB 2 : KOMUNIKASI
+</h5>
+<h5>2.1 Komunikasi Data</h5>
+Komunikasi data merupakan bagian dari telekomunikasi yang secara khusus
 berkenaan dengan transmisi atau pemindahan data dan informasi diantara
 komputer-komputer   dan   piranti-piranti   yang   lain   dalam   bentuk
 digital   yang dikirimkan melalui media komunikasi data.
@@ -17,7 +16,7 @@ Komunikasi data merupakan baguan vital dari suatu masyarakat informasi   karena
 sistem   ini   menyediakan   infrastruktur   yang   memungkinkan
 komputer-komputer dapat berkomunikasi satu sama lain.
 
-#### Komponen Komunikasi Data
+##### Komponen Komunikasi Data
 
 - Pengirim, adalah piranti yang mengirimkan data
 - Penerima, adalah piranti yang menerima data
@@ -25,10 +24,9 @@ komputer-komputer dapat berkomunikasi satu sama lain.
 - Media   pengiriman,   adalah   media   atau   saluran   yang   digunakan   untuk mengirimkan data
 - Protokol, adalah aturan-aturan yang berfungsi untuk menyelaraskan hubungan.
 
-<center>
-![Komunikasi Data](/assets/img/komunikasi-data.png)</center>
+<center>![Komunikasi Data](/assets/img/komunikasi-data.png)</center>
 
-#### **2.2 Protokol**
+##### **2.2 Protokol**
 
 Protokol dapat diartikan sebagai sebuah aturan yang mendefinisikan beberapa
 fungsi yang ada dalam sebuah jaringan komputer, misalnya mengirim pesan, data,
@@ -36,13 +34,13 @@ informasi dan fungsi lain yang harus dipenuhi oleh sisi pengirim dan sisi
 penerima agar komunikasi dapat berlangsung dengan benar, walaupun sistem yang
 ada dalam jaringan tersebut berbeda sama sekali.
 
-#### Komponen Protokol
+##### Komponen Protokol
 
 1. Aturan atau prosedur, mengatur pembentukan/pemutusan hubungan
 1. Format atau bentuk, mengatur proses transfer data representasi pesan
 1. Kosakata (vocabulary), jenis pesan dan makna masing-masing pesan
 
-#### Fungsi Protokol
+##### Fungsi Protokol
 
 Secara umum fungsi dari protokol adalah untuk menghubungkan sisi pengirim
 dan sisi penerima dalam berkomunikasi serta dalam bertukar informasi agar dapat
@@ -82,7 +80,7 @@ pada waktu data dikirimkan.
 Fungsi dari *transmission service* adalah memberi pelayanan komunikasi data
 khususnya yang berkaitan dengan prioritas dan keamanan serta perlindungan data.
 
-#### Susunan Protokol
+##### Susunan Protokol
 
 Protokol jaringan disusun oleh dalam bentuk lapisan-lapisan (*layer*). Hal ini
 mengandung arti supaya jaringan yang dibuat nantinya tidak menjadi rumit.
@@ -96,7 +94,7 @@ Pada   saat   merencanakan   sebuah   jaringan,   hendaknya   memperhatikan
 bagaimana menentukan interface yang tepat yang akan ditempatkan di antara dua
 layer yang bersangkutan.
 
-#### Standarisasi Protokol (ISO 7498)
+##### Standarisasi Protokol (ISO 7498)
 
 *International Standards Organization* (ISO) membuat suatu arsitektur komunikasi
 yang dikenal sebagai *Open System Interconnection* (OSI), model yang
@@ -113,7 +111,7 @@ aktual.
   <figcaption class="text-center"><i>Gambar 1: Pembagian Model Layer OSI</i></figcaption>
 </center>
 
-### Penjelasan Model OSI Layer
+##### Penjelasan Model OSI Layer
 
 | Model OSI                                                                     | Keterangan                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,13 +154,13 @@ Hubungan antara model referensi OSI dengan protokol internet dapat dilihat dalam
 |         | MAC (*Media Access Control*) |                       | Ethernet, FDDI, ISDN, ATM                      |                                                                     |
 | **1**   |          **Fisik**           |                       |                                                |                                                                     |
 
-#### **2.3 Remote Procedure Call (RPC)**
+##### **2.3 Remote Procedure Call (RPC)**
 
 *Remote Procedure Call* (RPC) adalah sebuah metode yang memungkinkan kita untuk mengakses sebuah prosedur yang berada di komputer lain. Untuk dapat melakukan ini sebuah server harus menyediakan layanan *remote procedure*.
 
 RPC  masih  menggunakan  cara  primitif  dalam  pemrograman,  yaitu menggunakan paradigma *procedural programming*. Hal itu membuat kita sulit ketika menyediakan banyak *remote procedure*.
 
-#### Kelebihan RPC
+##### Kelebihan RPC
 
 - Relatif mudah digunakan
 
@@ -172,7 +170,7 @@ Pemanggilan *remote procedure* tidak jauh berbeda dibandingkan pemanggilan *loca
 
 Sejak tahun 1980-an RPC telah banyak digunakan dalam pengembangan *mission-critical application* yang memerlukan *scalability*, *fault tolerance*, & *reliability*.
 
-#### Kekurangan RPC
+##### Kekurangan RPC
 
 - Tidak fleksibel terhadap perubahan
 
@@ -180,7 +178,7 @@ Sejak tahun 1980-an RPC telah banyak digunakan dalam pengembangan *mission-criti
 
 - Berdasarkan prosedural/*structured programming* yang sudah ketinggalan jaman dibandingkan OOP.
 
-#### Prinsip RPC dalam program Client-Server
+##### Prinsip RPC dalam program Client-Server
 
 <center>
 ![RPC dalam program Client-Server](/assets/img/RPC-dalam-Client-Server.png)</center>
@@ -195,7 +193,7 @@ Skema  RPC  ini  dilakukan  juga  pada  proses-proses  yang  running  di  komput
 - *Stub* menerima request, unmarshall data, dan memanggil method yang diminta.
 Kemudian proses mengembalikan nilai yang diinginkan
 
-#### Langkah-langkah dalam RPC
+##### Langkah-langkah dalam RPC
 <center>
 ![Langkah-langkah dalam RPC](/assets/img/langkah-langkah-RPC.png)</center>
 
@@ -210,7 +208,7 @@ Kemudian proses mengembalikan nilai yang diinginkan
 9. OS client memberikan pesan tersebut ke client stub
 10. Client  stub  meng-*unpack*  hasil  dan  mengembalikan  hasil  tersebut  ke client
 
-#### **2.4. Object Remote**
+##### **2.4. Object Remote**
 
 *Remote Method Invocation* (RMI) adalah sebuah teknik pemanggilan method remote yang lebih secara umum lebih baik daripada RPC. 
 RMI menggunakan paradigma pemrograman berorientasi obyek *(Object Oriented Programming)*. 
@@ -233,7 +231,7 @@ ditangani oleh RMI, bagi programmer komunikasi remote tampak seperti invokasi me
 untuk mem-*pass* objek ke objek remote, RMI menyediakan mekanisme yang diperlukan objek 
 me-*load* kode objek, sebagaimana juga mentransmisikan datanya.
 
-#### Langkah-Langkah Pembuatan Program dengan RMI
+##### Langkah-Langkah Pembuatan Program dengan RMI
 
 Membangun  suatu  aplikasi  terdistribusi  menggunakan  RMI  meliputi  6  langkah. 
 Keenam langkah tersebut adalah:

@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Sistem Terdistribusi BAB I"
+title:  "Sistem Terdistribusi Bab 1"
 permalink: sistem-terdistribusi-bab-1.html
 ---
- 
-###<center>BAB I</center>
-
+<center>
+##### BAB 1 : Sistem Terdistribusi
+</center>
 >
 1. Apa itu Sistem Terdistribusi?
 2. Bagaimana hubungan antara Jaringan Komputer dengan Sistem Terdistribusi?
@@ -16,7 +16,7 @@ permalink: sistem-terdistribusi-bab-1.html
 6. Kendala apakah yang akan kita hadapi dalam Sistem Terdistribusi?
 7. Sebutkan contoh-contoh Sistem Terdistribusi?
 
->####1. Apa itu Sistem Terdistribusi?
+>##### 1. Apa itu Sistem Terdistribusi?
 
 Sistem Terdistribusi adalah sekumpulan komputer otonom yang terhubung
 ke suatu jaringan, dimana bagi pengguna sistem terlihat sebagai satu komputer.

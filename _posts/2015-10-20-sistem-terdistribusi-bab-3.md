@@ -1,18 +1,16 @@
 ---
 layout: post
-title: "Sistem Terdistribusi BAB III"
+title: "Sistem Terdistribusi Bab 3"
 permalink: sistem-terdistribusi-bab-3.html
 ---
-
-###<center>BAB III PROSES</center>
-
-#### **3.1 Thread**
-
+<h5 class="u-pull-center">BAB 3 : PROSES
+</h5>
+<h5>3.1 Thread</h5>
 *Thread* adalah sebuah alur kontrol dari sebuah proses. Kontrol thread tunggal ini hanya memungkinkan proses untuk menjalankan satu tugas pada satu waktu. Banyak sistem operasi modern telah memiliki konsep yang dikembangkan agar memungkinkan sebuah proses untuk memiliki eksekusi *multi-threads*.
 
 Keuntungan dari *multithreaded* meliputi peningkatan respon dari pengguna, pembagian sumber daya proses, ekonomis, dan kemampuan untuk mengambil keuntungan dari arsitektur multiprosesor. *Thread* merupakan unit dasar dari penggunaan CPU, yang terdiri dari Thread_ID, *program counter*, *register set*, dan *stack*. Sebuah *thread* berbagi *code section*, *data section*, dan sumber daya sistem operasi dengan *Thread* lain yang dimiliki oleh proses yang sama. *Thread* juga sering disebut *lightweight process*. Sebuah proses tradisional atau *heavyweight process* mempunyai *thread* tunggal yang berfungsi sebagai pengendali.
 
-#### Keuntungan Thread
+##### Keuntungan Thread
 
 Keuntungan dari program yang multithreading dapat dipisah menjadi empat kategori:
 
@@ -21,7 +19,7 @@ Keuntungan dari program yang multithreading dapat dipisah menjadi empat kategori
 3. **Ekonomi** : dalam pembuatan sebuah proses banyak dibutuhkan pengalokasian memori dan sumber daya. Alternatifnya adalah dengan penggunaan *thread*, karena *thread* berbagi memori dan sumber daya proses yang memilikinya maka akan lebih ekonomis untuk membuat dan *context switch thread*. Akan susah untuk   mengukur   perbedaan   waktu   antara   proses   dan  *thread*  dalam   hal pembuatan dan pengaturan, tetapi secara umum pembuatan dan pengaturan proses lebih lama dibandingkan *thread*. Pada *Solaris*, pembuatan proses lebih lama 30 kali dibandingkan pembuatan *thread*, dan *context switch* proses 5 kali lebih lama dibandingkan *context switch thread*.
 4. **Utilisasi  arsitektur  multiprocessor** :  Keuntungan  dari  *multithreading*  dapat sangat meningkat pada arsitektur *multiprocessor*, dimana setiap *thread* dapat berjalan secara pararel di atas processor yang berbeda. Pada arsitektur processor tunggal, CPU menjalankan setiap *thread* secara bergantian tetapi hal ini berlangsung sangat cepat sehingga menciptakan ilusi pararel, tetapi pada kenyataannya hanya satu *thread* yang dijalankan CPU pada satu-satuan waktu (satu-satuan waktu pada CPU biasa disebut *time slice* atau *quantum*).
 
-#### Multithreading Models
+##### Multithreading Models
 
 - Thread pengguna: *Thread* yang pengaturannya dilakukan oleh pustaka thread pada tingkatan pengguna. Karena pustaka yang menyediakan fasilitas untuk pembuatan dan penjadwalan *thread*, *thread* pengguna cepat dibuat dan dikendalikan.
 - Thread Kernel: *Thread* yang didukung langsung oleh kernel. Pembuatan, penjadwalan dan manajemen thread dilakukan oleh kernel pada *kernel space*. Karena dilakukan oleh sistem operasi, proses pembuatannya akan lebih lambat jika dibandingkan dengan *thread* pengguna.
@@ -32,7 +30,7 @@ Model-model Multithreading:
 - **Model One-to-One** : Model ini memetakan setiap *thread* tingkatan pengguna ke setiap *thread*. Ia menyediakan lebih banyak *concurrency* dibandingkan *model Many-to-One*. Keuntungannya sama dengan keuntungan *thread* kernel. Kelemahan model ini ialah setiap pembuatan *thread* pengguna memerlukan tambahan  *thread* kernel.  Karena  itu,  jika  mengimplementasikan  sistem  ini maka akan menurunkan kinerja dari sebuah aplikasi sehingga biasanya jumlah *thread* dibatasi dalam sistem. Contoh: Windows NT/XP/2000 , Linux, Solaris
 - **Model Many-to-Many** : Model ini memultipleks banyak *thread* tingkatan pengguna ke *thread* kernel yang jumlahnya sedikit atau sama dengan tingkatan pengguna. Model ini mengizinkan *developer* membuat *thread* sebanyak yang ia mau tetapi *concurrency* tidak dapat diperoleh karena hanya satu *thread* yang dapat dijadwalkan oleh kernel pada suatu waktu. Keuntungan dari sistem ini ialah kernel *thread* yang bersangkutan dapat berjalan secara paralel pada multiprosessor.
 
-#### Pustaka Thread
+##### Pustaka Thread
 
 Pustaka *Thread* atau yang lebih familiar dikenal dengan *Thread Library* bertugas untuk menyediakan API untuk *programmer* dalam menciptakan dan memanage *thread*. Ada dua cara dalam mengimplementasikan pustaka *thread*:
  
@@ -41,7 +39,7 @@ Pustaka *Thread* atau yang lebih familiar dikenal dengan *Thread Library* bertug
 
 Ada tiga pustaka *thread* yang sering digunakan saat ini, yaitu: POSIX Pthreads, Java, dan Win32. Implementasi POSIX standard dapat dengan cara *user* level dan kernel level,  sedangkan  Win32  adalah  kernel  level. Java API *thread* dapat diimplementasikan oleh Pthreads atau Win32.
 
-#### Pembatalan Thread (Thread Cancellation)
+##### Pembatalan Thread (Thread Cancellation)
 
 *Thread Cancellation* ialah pembatalan *thread* sebelum tugasnya selesai. 
 Pemberhentian target Thread dapat dilakukan dengan 2 cara:
@@ -52,7 +50,7 @@ target *thread*.
 
 Cara kerja dari *deffered cancellation* adalah dengan menggunakan satu *thread* yang berfungsi sebagai  pengindikasi  bahwa  target  *thread* hendak  dibatalkan.  Tetapi  pembatalan hanya akan terjadi jika target thread memeriksa apakah ia harus batal atau tidak. Hal ini  memperbolehkan  *thread*  untuk  memeriksa  apakah  ia  harus  batal  pada  waktu dimana ia dapat dibatalkan secara aman.
 
-#### Penjadwalan Thread
+##### Penjadwalan Thread
 
 Untuk menjadwalkan *thread*, sistem dengan *model mulithreading many to many* atau
 *many to one* menggunakan:
@@ -60,9 +58,9 @@ Untuk menjadwalkan *thread*, sistem dengan *model mulithreading many to many* at
 - *Process  Contention  Scope*  (PCS). Pustaka  *thread*  menjadwalkan  *thread* pengguna untuk berjalan pada LWP *(lightweight process)* yang tersedia.
 - *System Contention Scope* (SCS). SCS berfungsi untuk memilih satu dari banyak *thread* , kemudian menjadwalkannya ke satu *thread* tertentu(CPU / Kernel).
 
-#### **3.2. Client – Server**
+##### **3.2. Client – Server**
 
-#### Pengertian Client Server
+##### Pengertian Client Server
 
 Dari buku **Technical Foundations of Client/Server Systems** karangan Carl L. Hall (A Wiley – QED Publication). Di halaman 7 tentang Client/Server General Definition disebutkan:
 
@@ -90,7 +88,7 @@ Microsoft  menamakan  proses  tersebut  `services`  sedangkan  keluarga Unix/Lin
 
 `Socket` adalah sebuah *endpoint* untuk komunikasi didalam jaringan. Sepasang proses atau *thread* berkomunikasi dengan membangun sepasang *socket*, yang masing-masing proses memilikinya. Socket dibuat dengan menyambungkan dua buah alamat IP melalui *port* tertentu. Secara umum *socket* digunakan dalam *client/server* system, dimana sebuah *server* akan menunggu *client* pada *port* tertentu. Begitu ada *client* yang menghubungi *server* maka *server* akan menyetujui komunikasi dengan *client* melalui *socket* yang dibangun.
 
-#### Model Client-Server
+##### Model Client-Server
 
 1. **Arsitektur Mainframe**<br>
 Pada arsitektur ini, terdapat sebuah komputer pusat (host) yang memiliki sumber daya yang sangat besar, baik memori, processor maupun media penyimpanan. Melalui komputer terminal, pengguna mengakses sumber daya tersebut. Komputer terminal hanya memiliki monitor/keyboard dan tidak memiliki CPU. Semua  sumber  daya  yang  diperlukan  terminal  dilayani  oleh  komputer  host.
@@ -111,11 +109,11 @@ middle-tier. Contohnya MTS (Microsoft Transaction Server) dan MIDAS
 <center>
 ![Model Three-tier](/assets/img/model-three-tier.png)</center>
 
-#### **3.3. Agent**
+##### **3.3. Agent**
 
 Software Agent adalah entitas perangkat lunak yang didedikasikan untuk tujuan tertentu yang memungkinkan user untuk mendelegasikan tugasnya secara mandiri, selanjutnya  software  agent  nantinya  disebut  agent  saja. Agent yang tidak berpindah ke host lain disebut *stationary agent*.
 
-#### Karakteristik dari Agen:
+##### Karakteristik dari Agen:
 
 1. **Autonomy** : Agent   dapat   melakukan   tugas   secara   mandiri   dan   tidak dipengaruhi secara langsung oleh user, agent lain ataupun oleh lingkungan (environment). Untuk mencapai tujuan dalam melakukan tugasnya secara mandiri, agent harus memiliki kemampuan kontrol terhadap setiap aksi yang mereka perbuat, baik aksi keluar maupun ke dalam `[Woolridge et. al., 1995]`.
 2. **Intelligence,  Reasoning,  dan  Learning** : Setiap  agent  harus  mempunyai standar minimum untuk bisa disebut agent, yaitu intelegensi *(intelligence)*. Dalam konsep *intelligence*, ada tiga komponen yang harus dimiliki: *internal knowledge base*, kemampuan *reasoning* berdasar pada *knowledge* base yang dimiliki, dan kemampuan *learning* untuk beradaptasi dalam perubahan lingkungan.
@@ -126,7 +124,7 @@ Software Agent adalah entitas perangkat lunak yang didedikasikan untuk tujuan te
 7. **Communication   and   Coordination   Capability** :   Agent   harus   memiliki kemampuan berkomunikasi dengan user dan juga agent lain. Masalah komunikasi dengan user adalah masuk ke masalah user interface dan perangkatnya, sedangkan masalah komunikasi, koordinasi, dan kolaborasi dengan  agent  lain  adalah  masalah  sentral  penelitian  *Multi  Agent  System* (MAS).  Bagaimanapun  juga,  untuk  bisa  berkoordinasi  dengan  agent  lain dalam menjalankan tugas, perlu bahasa standard untuk berkomunikasi. Tim Finin `[Finin et al., 1993]` `[Finin et al., 1994]` `[Finin et al., 1995]` `[Finin et al.,
 1997]` dan Yannis Labrou `[Labrou et al., 1994]` `[Labrou et al., 1997]` adalah peneliti *software agent* yang banyak berkecimpung dalam riset mengenai bahasa dan protokol komunikasi antar agent. Salah satu produk mereka adalah *Knowledge Query and Manipulation Language* (KQML). Dan masih terkait dengan komunikasi antar agent adalah *Knowledge Interchange Format* (KIF).
 
-#### Klasifikasi Software Agent
+##### Klasifikasi Software Agent
 
 **1. Klasifikasi menurut Karakteristik yang Dimiliki**
 
@@ -160,7 +158,7 @@ Menurut  Nwana,  agent  bisa  diklasifikasikan  menjadi tujuh berdasarkan  pada 
  - *Database Agent*
  - *Resource Brokering Agent*
 
-#### Bahasa Pemrograman yang digunakan
+##### Bahasa Pemrograman yang digunakan
 
 1. *Object-Orientedness* : Agent  harus diimplementasikan kedalam pemrorgaman yang berorientasi obyek *(object-oriented programming language)*.
 2. *Platform Independence* : Idealnya bahasa pemrograman yang dipakai untuk implementasi adalah yang terlepas dari platform, atau program tersebut harus bisa dijalankan di platform apapun *(platform independence)*.
