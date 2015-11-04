@@ -3,6 +3,10 @@ layout: page
 title: About
 permalink: /about/
 ---
+Hi...
+<h6 class="u-pull-center">
+![me](/assets/img/me_and_friend.jpg)
+</h6>
 
 *Assalamu'alaikum ...*
 
