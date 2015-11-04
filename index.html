@@ -8,9 +8,8 @@ layout: default
         <span class="post-date u-pull-left">
         {{ post.date | date: "%B %e, %Y" }}
     	</span><br>
-  		<nav>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} </nav>
-  		<br>
-    	<a href="{{ post.url | prepend: site.baseurl }}" class="button">
+  		<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+  		<a href="{{ post.url | prepend: site.baseurl }}" class="button">
     	Selengkapnya</a><br><br>
   
 {% endfor %}
