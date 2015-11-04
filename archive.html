@@ -14,13 +14,14 @@ permalink: /archive/
 			
 			{% if forloop.first %}
 			  <div  class="post-list">
-			  <h4 class="page-heading">{{this_year}}</h4>
+			  <h4 class="u-pull-center">{{this_year}}</h4>
 			  
-			  <ul>
+			  <ol>
 			{% endif %}
-			
-			<li><span>{{ post.date | date: "%B %e, %Y" }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-			
+			<h5>
+			<li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+			<span class="u-pull-right">{{ post.date | date: "%B %e, %Y" }}</span></li>
+			</h5>
 			{% if forloop.last %}
 			  </ul>
 			</div>
