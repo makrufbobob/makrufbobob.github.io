@@ -1,29 +1,25 @@
 
 <footer class="site-footer">
   <div class="wrapper">
-
-        <div class="social-media-list">
+        <div class="sosial-media">
           {% if site.github_username %}
             <a href="https://github.com/{{ site.github_username }}">
-              <span class="icon-footer icon-stack">
-              <i class="icon-footer icon-sign-blank icon-stack-base"></i>
-             <i class="icon-footer icon-github-alt icon-light"></i>
-              </span>
+              Github
            </a>
           {% endif %}
 &nbsp
         {% if site.twitter_username %}
             <a href="https://twitter.com/{{ site.twitter_username }}">
-              <span class="icon-footer icon-stack">
-              <i class="icon-footer icon-sign-blank icon-stack-base"></i>
-             <i class="icon-footer icon-twitter icon-light"></i>
-           </span>
+             Twitter
            </a>
           {% endif %}
-
-<br>
-&copy2015 - Ma'ruf</div>
-        </div>
-        </div>
-
+&nbsp
+        {% if site.facebook_username %}
+            <a href="https://facebook.com/{{ site.facebook_username }}">
+             Facebook
+           </a>
+          {% endif %}
+</div>
+&copy2015 - Ma'ruf
+</div>
 </footer>
