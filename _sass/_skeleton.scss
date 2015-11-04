@@ -161,7 +161,7 @@ a {
   color: #ff3503;
   text-decoration: none; }
 a:hover {
-  color: #ff0000;
+  color: #a0a0a0;
   text-decoration: none; }
 
 
@@ -185,8 +185,8 @@ input[type="button"] {
   text-decoration: none;
   white-space: nowrap;
   background-color: solid;
-  border-radius: 10px;
-  border: 1px solid #ff3503;
+  border-radius: 1px;
+  border: 1px solid #e0e0e0;
   cursor: pointer;
   box-sizing: border-box; }
 .button:hover,
@@ -199,9 +199,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #ffffff;
-  border-color: black;
-  background-color :#ff3503;
+  color: #000000;
+  border-color: #f0f0f0;
+  background-color :#e0e0e0;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -378,7 +378,6 @@ form {
 .center {
     text-align: center;
     float: center;}
-
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
