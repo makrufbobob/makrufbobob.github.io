@@ -1,5 +1,5 @@
 # Site settings
-title: bobob
+title: Ma'ruf
 email: makrufdark@gmail.com
 description: > # - Bloging - Belajar - Hobby
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -19,5 +19,6 @@ redcarpet:
     - tables
 
 permalink: none
+relative_permalinks: true
 
-
+timezone: Asia/Jakarta
