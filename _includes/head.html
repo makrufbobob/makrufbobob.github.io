@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
@@ -10,11 +11,14 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
-   <link rel="stylesheet" href="/css/main.css">
+  <!-- css -->
+  <link rel="stylesheet" href="/css/main.css">
+  
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
+  <!-- Font Awesome -->
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-  
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/font-awesome-ie7.min.css">
   <link rel="stylesheet" href="/assets/less/font-awesome.less">
