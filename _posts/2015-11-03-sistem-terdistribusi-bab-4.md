@@ -1,12 +1,11 @@
 ---
 layout: post
 title:  "Sistem Terdistribusi Bab 4"
-comments: True
 ---
 
 <h5 class="u-pull-center">BAB 4 : Sistem Operasi Terdistribusi</h5>
-<h5>4.1. Sistem Operasi
-</h5>
+
+#####4.1. Sistem Operasi
 Sistem operasi (*Operating System* atau *OS*) adalah perangkat lunak sistem yang bertugas untuk melakukan kontrol dan manajemen perangkat keras serta operasi-operasi dasar sistem, termasuk menjalankan software aplikasi seperti program- program pengolah kata dan web browser.
 
 Sistem Operasi secara umum terdiri dari beberapa bagian:
