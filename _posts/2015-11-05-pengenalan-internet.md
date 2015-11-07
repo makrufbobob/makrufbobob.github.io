@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pengenalan Internet"
+comments: true
 ---
 
 Internet adalah sebuah sistem jaringan komputer global yang menggunakan Internet Protocol (TCP/IP) untuk menghubungkan beberapa miliar devices (perangkat) di seluruh dunia.

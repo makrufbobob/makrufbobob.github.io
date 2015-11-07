@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sistem Terdistribusi Bab 1"
-permalink: sistem-terdistribusi-bab-1.html
+comments: true
 ---
 <center>
 ##### BAB 1 : Sistem Terdistribusi

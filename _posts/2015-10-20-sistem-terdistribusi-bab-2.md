@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sistem Terdistribusi Bab 2"
-permalink: sistem-terdistribusi-bab-2.html
+comments: true
 ---
 
 <h5 class="u-pull-center"> BAB 2 : KOMUNIKASI

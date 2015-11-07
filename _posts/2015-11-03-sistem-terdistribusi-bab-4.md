@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Sistem Terdistribusi Bab 4"
+comments: true
 ---
 
 <h5 class="u-pull-center">BAB 4 : Sistem Operasi Terdistribusi</h5>

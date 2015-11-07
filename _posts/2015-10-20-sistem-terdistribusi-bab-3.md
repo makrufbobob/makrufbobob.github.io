@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sistem Terdistribusi Bab 3"
-permalink: sistem-terdistribusi-bab-3.html
+comments: true
 ---
 <h5 class="u-pull-center">BAB 3 : PROSES
 </h5>
