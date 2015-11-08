@@ -12,8 +12,6 @@ layout: default
     {{ content }}
   </article>
 
-<hr>
-
 {% if page.comments %}
 <div id="disqus_thread"></div>
 <script type="text/javascript">
@@ -36,11 +34,11 @@ s.setAttribute('data-timestamp', +new Date());
 (d.head || d.body).appendChild(s);
 })();
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">Comments Powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">Comments Powered by <span class="logo-disqus">Disqus</span></a>
 {% endif %}
 
-<br><br><br>
+<br>
 {% if site.related_posts != empty %}
 <aside class="related">
   <h4>Related Posts</h4>
