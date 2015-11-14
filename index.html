@@ -6,9 +6,8 @@ layout: default
         <h3><a href="{{ post.url | prepend: site.baseurl }}">
         {{ post.title }}</a></h3>
         <span class="post-date u-pull-left">
-        {{ post.date | date: "%B %e, %Y" }} &nbsp &nbsp
-        <script id="dsq-count-scr" src="//makrufbobob.disqus.com/count.js" async></script>
-        <a href="{{post.url | prepend: site.aseurl }}#disqus_thread"></a>
+        {{ post.date | date: "%B %e, %Y" }} &nbsp • &nbsp
+        <a href="{{ post.url }}index.html#disqus_thread" data-disqus-identifier="{{post.url}}"></a>
     	 </span><br>
   		<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
   		<a href="{{ post.url | prepend: site.baseurl }}" class="button">
