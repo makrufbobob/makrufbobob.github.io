@@ -159,7 +159,12 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #ff3503;
-  text-decoration: none; }
+  text-decoration: none;
+  -webkit-transition: all ease-in-out;
+  -moz-transition: all ease-in-out;
+  transition: all ease-in-out;
+  transition-duration: 0.3s;
+ }
 a:hover {
   color: #a0a0a0;
   text-decoration: none; }
@@ -172,6 +177,10 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   display: inline-block;
   height: 35px;
   padding: 0 28px;

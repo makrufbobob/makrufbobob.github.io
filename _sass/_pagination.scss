@@ -14,9 +14,15 @@
 // Pagination items can be `span`s or `a`s
 .pagination-item {
   display: block;
-  padding: 2rem;
-  border: solid #eee;
-  border-width: 1px 0;
+  background: #f0f0f0;
+  -webkit-transition: all ease-in-out;
+  -moz-transition: all ease-in-out;
+  transition: all ease-in-out;
+  transition-duration: 0.3s;
+  border-radius: 0.1875em;
+  border: 1px solid #f3f3f3;
+  color: #333333;
+  padding: 1.5em 1.5em;
 
   &:first-child {
     margin-bottom: -1px;
@@ -26,17 +32,17 @@
 // Only provide a hover state for linked pagination items
 a.pagination-item:hover {
   color: #000000;
-  background-color: #e0e0e0;
+  background-color: #dadada;
 }
 
-@media (min-width: 30em) {
+@media (min-width: 480px) {
   .pagination {
     margin: 1rem 0;
   }
 
   .pagination-item {
     float: left;
-    width: 40%;
+    width: 39%;
     border-width: 1px;
 
     &:first-child {
@@ -48,6 +54,34 @@ a.pagination-item:hover {
       margin-left: -1px;
       border-top-right-radius:    4px;
       border-bottom-right-radius: 4px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .pagination {
+    margin: 1rem 0;
+
+  }
+
+  .pagination-item {
+    float: left;
+    width: 20%;
+    height: 1%;
+    border-width: 0,1px;
+    display: block;
+    border-radius: 0.1em;
+    border: 1px solid #f3f3f3;
+
+    &:first-child {
+      margin-bottom: 0;
+      border-top-left-radius: 0, 1px;
+      border-bottom-left-radius: 0, 1px;
+    }
+    &:last-child {
+      margin-left: -1px;
+      border-top-right-radius: -1px;
+      border-bottom-right-radius: 1px;
     }
   }
 }

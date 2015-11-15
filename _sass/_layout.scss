@@ -2,8 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 5px solid $grey-color-light;
+    border-top: 7px solid $grey-color-dark;
+    border-bottom: 2px solid $grey-color-light;
     min-height: 75px;
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -11,7 +11,9 @@
 
 .site-title {
     margin-top: 10px;
-    font-size: 35px;
+    font-family: "Helvetica Neue";
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    font-size: 40px;
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -38,7 +40,9 @@
     }
 
     .page-link {
+        font-family: "Helvetica Neue";
         color: #707070;
+        font-size: 27px;
         line-height: $base-line-height;
 
         // Jarak antar nav items, tapi tidak di list awal
@@ -50,7 +54,12 @@
     @include media-query($on-palm) {
         .page-link {
             display: inline;
+            float: center;
             padding: -4px -4px ;
+            font-size: 26px;
+            &:not(:last-child) {
+            margin-left: 8px;
+        }
         }
     }
 }
@@ -66,7 +75,13 @@
     align: center;
     text-align: center;
     color: #ffffff;
-    background-color: #ff3503;
+background-image: linear-gradient(45deg,
+ #000000 30%,
+ #666666 30%,
+ #666666 60%,
+ #CCCCCC 60%,
+ #CCCCCC 90%,
+ #ffffff 90%)
 }
 .sosial-media {
     font-size: 19px;
