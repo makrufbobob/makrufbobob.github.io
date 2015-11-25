@@ -16,13 +16,13 @@ layout: default
 {% endfor %}
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item u-pull-right" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
+    <a class="pagination-item u-pull-right" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older &rarr;</a>
   {% else %}
-    <span class="pagination-item u-pull-right">Older</span>
+    <span class="pagination-item u-pull-right">Older &rarr;</span>
   {% endif %}
   {% if paginator.previous_page %}
-    <a class="pagination-item u-pull-left" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer</a>
+    <a class="pagination-item u-pull-left" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">&larr; Newer</a>
   {% else %}
-    <span class="pagination-item u-pull-left">Newer</span>
+    <span class="pagination-item u-pull-left">&larr; Newer</span>
   {% endif %}
 </div>
