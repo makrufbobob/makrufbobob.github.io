@@ -1,4 +1,4 @@
-# makrufbobob.github.io
+# Ma'ruf
 My Simple Blog
 ----
 *a simple blog with a simple jekyll*
