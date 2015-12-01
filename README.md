@@ -1,4 +1,8 @@
-# ma'ruf
+============
+
+# Ma'ruf
+
+============
 
 *a simple blog with a simple jekyll*
 
